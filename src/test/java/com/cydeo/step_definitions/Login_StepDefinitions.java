@@ -28,5 +28,14 @@ public class Login_StepDefinitions {
 
     }
 
+    @When("user enters admin username")
+    public void user_enters_admin_username() {
+
+    }
+    @When("user enters admin password")
+    public void user_enters_admin_password() {
+
+    }
+
 
 }

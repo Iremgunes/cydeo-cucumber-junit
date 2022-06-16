@@ -10,10 +10,17 @@
      And user enters librarian password
      Then user should see the dashboard
 
-     Scenario: login as student
+   Scenario: login as student
        When user enters student username
        And user enters student password
        Then user should see the dashboard
+
+   Scenario: login as admin
+     When user enters admin username
+     And user enters admin password
+     Then user should see the dashboard
+
+
 
 
 
