@@ -7,10 +7,7 @@ import io.cucumber.java.en.When;
 
 public class Login_StepDefinitions {
 
-    @Given("user is on the library login page")
-    public void user_is_on_the_library_login_page() {
-        System.out.println("user is on the library login page");
-    }
+
 
     @When("user enters librarian username")
     public void user_enters_librarian_username() {
@@ -40,10 +37,25 @@ public class Login_StepDefinitions {
     public void user_enters_admin_username() {
         System.out.println("user enters admin username");
     }
+
     @And("user enters admin password")
     public void user_enters_admin_password() {
         System.out.println("user enters admin password");
     }
 
+    @Given("user is on the library login page")
+    public void user_is_on_the_library_login_page() {
+        System.out.println("user is on the library login page");
+    }
 
+    @Given("user in on student login page")
+    public void user_in_on_student_login_page() {
+        System.out.println("user in on student login page");
+    }
+
+
+    @Given("user in on admin login page")
+    public void adminInOnAdminLoginPage() {
+        System.out.println("user in on admin login page");
+    }
 }
