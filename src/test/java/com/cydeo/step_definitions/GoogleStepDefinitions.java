@@ -9,7 +9,14 @@ import org.openqa.selenium.Keys;
 
 public class GoogleStepDefinitions {
     GoogleSearchPage googleSearchPage = new GoogleSearchPage();
+    @When("user types {string} and clicks enter")
+    public void user_types_and_clicks_enter(String string) {
 
+    }
+    @Then("user sees {string} in the google title")
+    public void user_sees_in_the_google_title(String string) {
+
+    }
 
     @When("user is on Google search page")
     public void user_is_on_google_search_page() {
@@ -23,8 +30,6 @@ public class GoogleStepDefinitions {
        String actualTitle = Driver.getDriver().getTitle();
 
         Assert.assertEquals(actualTitle,expectedTitle);
-
-
 
     }
 
@@ -44,5 +49,7 @@ public class GoogleStepDefinitions {
 
 
     }
+
+
 
 }
