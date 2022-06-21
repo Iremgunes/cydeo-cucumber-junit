@@ -53,7 +53,7 @@ public class WebTable_StepDefinitions {
 
          */
 
-        webTableLoginPage.login();
+        webTableLoginPage.login(username,pw);
 
     }
 
