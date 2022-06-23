@@ -3,8 +3,11 @@ package com.cydeo.utilities;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -64,4 +67,22 @@ public class BrowserUtils {
         wait.until(ExpectedConditions.invisibilityOf(webElement));
 
     }
+
+
+    public static List<String> dropdownOptionsAsString(WebElement dropdownElement){
+        Select select = new Select(dropdownElement);
+
+        List<WebElement> actualOptionsAsWebElement = select.getOptions();
+
+        List<String> dropdownOptionsAsString = new ArrayList<>();
+
+        for (WebElement each : actualOptionsAsWebElement) {
+            dropdownOptionsAsString.add(each.getText());
+        }
+
+        return dropdownOptionsAsString;
+
+    }
+
+
 }
