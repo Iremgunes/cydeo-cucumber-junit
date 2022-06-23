@@ -12,8 +12,8 @@ Feature: Examples of Cucumber data table implementations
 
     #to beautify the pipes above
   #windows : control + alt + L
-  
-  @wip
+
+
   Scenario: User should be able to see all 12 months in months
   dropdown
     Given User is on the dropdowns page of practice tool
@@ -30,4 +30,9 @@ Feature: Examples of Cucumber data table implementations
       | October   |
       | November  |
       | December  |
+
+
+
+
+
 
