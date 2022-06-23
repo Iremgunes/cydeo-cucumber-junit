@@ -31,9 +31,10 @@ public class Order_StepDefinitions {
        select.selectByVisibleText(string);
 
     }
-    @When("user enters quantity {string}")
-    public void user_enters_quantity(String string) {
-
+    @When("user enters quantity {int}")
+    public void user_enters_quantity(int arg0) {
+        orderPage.inputQuantity.sendKeys(arg0 + "" );
+        //or orderPage.inputQuantity.sendKeys(String.valueOf(arg0));
     }
     @When("user enters customer name {string}")
     public void user_enters_customer_name(String string) {
